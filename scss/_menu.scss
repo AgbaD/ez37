@@ -47,7 +47,7 @@
   
     &__burger {
         position: absolute;
-        left: 1rem;
+        left: 0;
         top: 0.5rem;
         width: 28px;
         height: 3px;
@@ -94,7 +94,8 @@
     top: 0;
     left: 0;
     width: 60vw;
-    opacity: 0.98;
+    opacity: 1;
+    box-shadow: 2px 1px 7px $primary-color;
     visibility: hidden;
   
     &.open {
@@ -130,6 +131,12 @@
             &.login {
                 margin-top: 1rem;
             }
+
+            &.register {
+                border-bottom: 1px solid $primary-color;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
         }
   
         &__link {
@@ -139,6 +146,10 @@
             padding: .5rem 0;
             font-weight: 300;
             @include transition-ease;
+
+            &.login, &.register {
+                color: $supplemantary-color !important;
+            }
   
             &:hover {
                 color: $supplemantary-color;
