@@ -29,30 +29,18 @@
                 display: inline;
                 margin-right: 3.5rem;
 
-                .sub-menu{
-                    display: none;
+                &.cat {
+                    position: relative;
 
-                    &-nav {
+                    & ul {
                         display: block;
-                        background: transparent;
-        
-                        &__item {
-                            display: inline;
-                            margin-right: 3.5rem;
-                        }
-        
-                        &__link {
-                            font-size: 1rem;
-                            margin-top: 1rem;
-                            text-decoration: none !important;
+                        position: relative;
+    
+                        & > li {
+                            list-style: none;
+                            text-decoration: none;
                         }
                     }
-                }
-
-                &:hover .sub-menu {
-                    display: block;
-                    position: absolute;
-
                 }
             }
 

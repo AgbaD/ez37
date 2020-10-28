@@ -242,25 +242,16 @@
     display: inline;
     margin-right: 3.5rem;
   }
-  .my-nav .menu-nav__item .sub-menu {
-    display: none;
+  .my-nav .menu-nav__item.cat {
+    position: relative;
   }
-  .my-nav .menu-nav__item .sub-menu-nav {
+  .my-nav .menu-nav__item.cat ul {
     display: block;
-    background: transparent;
+    position: relative;
   }
-  .my-nav .menu-nav__item .sub-menu-nav__item {
-    display: inline;
-    margin-right: 3.5rem;
-  }
-  .my-nav .menu-nav__item .sub-menu-nav__link {
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-decoration: none !important;
-  }
-  .my-nav .menu-nav__item:hover .sub-menu {
-    display: block;
-    position: absolute;
+  .my-nav .menu-nav__item.cat ul > li {
+    list-style: none;
+    text-decoration: none;
   }
   .my-nav .menu-nav__link {
     font-size: 1rem;
