@@ -1,0 +1,27 @@
+.courses {
+    background-color: #e1ebe1;
+    padding: 3rem;
+
+    &-list {
+        background: #e1ebe1;
+        height: 35px;
+        padding: 10px 10px 15px;
+        margin-top: 1rem;
+
+        & > li {
+            list-style-type: none;
+
+            & a {
+                text-decoration: none;
+                float: left;
+                margin-right: 1rem;
+                padding: 10px 15px;
+                color: $secondary-color;
+
+                &:hover {
+                    border-bottom: 2px solid $supplemantary-color;
+                }
+            }
+        }
+    }
+}

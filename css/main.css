@@ -239,7 +239,7 @@
     left: 1rem;
   }
   .barner-menu {
-    left: 10rem;
+    left: 10rem !important;
   }
   .my-nav {
     width: 100vw;
@@ -259,17 +259,6 @@
   .my-nav .menu-nav__item {
     display: inline;
     margin-right: 3.5rem;
-  }
-  .my-nav .menu-nav__item.cat {
-    position: relative;
-  }
-  .my-nav .menu-nav__item.cat ul {
-    display: block;
-    position: relative;
-  }
-  .my-nav .menu-nav__item.cat ul > li {
-    list-style: none;
-    text-decoration: none;
   }
   .my-nav .menu-nav__link {
     font-size: 1rem;
@@ -304,6 +293,12 @@
 @media screen and (min-width: 576px) {
   .jumbotron {
     background-position: center top;
+  }
+  .barner-menu {
+    left: 90vw;
+  }
+  .barner-menu-nav__item {
+    padding-right: 1.2rem;
   }
 }
 
@@ -349,6 +344,34 @@
   cursor: pointer;
 }
 
+.courses {
+  background-color: #e1ebe1;
+  padding: 3rem;
+}
+
+.courses-list {
+  background: #e1ebe1;
+  height: 35px;
+  padding: 10px 10px 15px;
+  margin-top: 1rem;
+}
+
+.courses-list > li {
+  list-style-type: none;
+}
+
+.courses-list > li a {
+  text-decoration: none;
+  float: left;
+  margin-right: 1rem;
+  padding: 10px 15px;
+  color: #222222;
+}
+
+.courses-list > li a:hover {
+  border-bottom: 2px solid #0f7c90;
+}
+
 body {
   background: #ffffff;
   color: #222222;
@@ -366,7 +389,7 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2.5rem;
   -webkit-box-shadow: 2px 1px 7px #73726c;
           box-shadow: 2px 1px 7px #73726c;
   max-height: 7vh;

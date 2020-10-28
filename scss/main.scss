@@ -2,6 +2,7 @@
 @import "./menu";
 @import "./responsive";
 @import "./jumbotron";
+@import "./section";
 
 body {
     background: $background-color;
@@ -20,7 +21,7 @@ header {
     z-index: 2;
     width: 100%;
     padding: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
     box-shadow: 2px 1px 7px $primary-color;
     max-height: 7vh;
 }

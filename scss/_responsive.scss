@@ -22,7 +22,7 @@
     }
 
     .barner-menu {
-        left: 10rem;
+        left: 10rem !important;
     }
 
     .my-nav {
@@ -41,20 +41,6 @@
             &__item {
                 display: inline;
                 margin-right: 3.5rem;
-
-                &.cat {
-                    position: relative;
-
-                    & ul {
-                        display: block;
-                        position: relative;
-    
-                        & > li {
-                            list-style: none;
-                            text-decoration: none;
-                        }
-                    }
-                }
             }
 
             &__link {
@@ -96,5 +82,15 @@
 @include media-sm {
     .jumbotron {
         background-position: center top;
+    }
+    .barner-menu {
+        left: 90vw;
+    
+        &-nav {
+    
+            &__item {
+                padding-right: 1.2rem;
+            }
+        }
     }
 }
