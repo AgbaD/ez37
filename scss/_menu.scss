@@ -12,6 +12,11 @@
         width: 3rem;
         font-size: 30px;
         font-weight: 700;
+
+        &:hover {
+            color: $tertiary-color;
+            text-decoration: none;
+        }
     }
 }
 
@@ -90,8 +95,8 @@
 }
 
 .my-nav {
-    position: fixed;
-    top: 0;
+    margin-top: -1rem;
+    margin-left: -1rem;
     left: 0;
     width: 60vw;
     opacity: 1;
@@ -152,6 +157,7 @@
             }
   
             &:hover {
+                text-decoration: none;
                 color: $supplemantary-color;
             }
         }

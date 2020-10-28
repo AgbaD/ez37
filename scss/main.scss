@@ -1,6 +1,7 @@
 @import "./config";
 @import "./menu";
 @import "./responsive";
+@import "./jumbotron";
 
 body {
     background: $background-color;
@@ -16,12 +17,12 @@ a {
     }
 
 header {
-    position: fixed;
     z-index: 2;
     width: 100%;
     padding: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     box-shadow: 2px 1px 7px $primary-color;
+    max-height: 13vh;
 }
 
 main {

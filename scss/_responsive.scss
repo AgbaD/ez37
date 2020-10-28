@@ -76,3 +76,9 @@
         }
     }
 }
+
+@include media-sm {
+    .jumbotron {
+        background-position: center top;
+    }
+}
