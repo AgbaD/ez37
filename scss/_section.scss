@@ -1,27 +1,77 @@
 .courses {
-    background-color: #e1ebe1;
+    background-color: #f0ecec;
     padding: 3rem;
 
     &-list {
-        background: #e1ebe1;
-        height: 35px;
+        background: #f0ecec;
         padding: 10px 10px 15px;
         margin-top: 1rem;
 
         & > li {
             list-style-type: none;
+            flex: 1;
+            margin-bottom: 1rem;
+            width: 20% !important;
+
+            & > div{
+                position: absolute;
+
+                & .submenulist {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 2rem;
+                    grid-auto-rows: minmax(200px, auto);
+
+                    & > li {
+                        list-style: none;
+
+                        & > img {
+                            width: 200px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
 
             & a {
                 text-decoration: none;
-                float: left;
-                margin-right: 1rem;
-                padding: 10px 15px;
+                padding: 10px 10px;
                 color: $secondary-color;
 
                 &:hover {
                     border-bottom: 2px solid $supplemantary-color;
                 }
             }
+        }
+    }
+}
+
+.add {
+
+    &__words {
+        position: absolute;
+        text-align: center;
+        color: $background-color;
+        margin-top: -40vh;
+        padding-top: 1rem;
+
+        & > h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 38.4px;
+            margin-bottom: 2rem;
+        }
+
+        & > a {
+            border: 1px solid $background-color;
+            padding: 1rem;
+            border-radius: 5px;
+            color: $background-color !important;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 19.2px;
         }
     }
 }
