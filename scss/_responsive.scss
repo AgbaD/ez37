@@ -6,15 +6,17 @@
     .barner {
         left: 1rem;
     }
-    
+
     .barner-menu {
         left: 10rem;
     }
 
-    .nav {
+    .my-nav {
         width: 100vw;
         left: 0;
         visibility: visible;
+        padding-bottom: 1rem;
+        box-shadow: 2px 1px 7px $primary-color;
 
         .menu-nav {
             display: block;
@@ -25,12 +27,37 @@
 
             &__item {
                 display: inline;
-                padding-right: 1.5rem;
+                margin-right: 3.5rem;
             }
 
             &__link {
                 font-size: 1rem;
                 margin-top: 1rem;
+                text-decoration: none !important;
+
+                &.login {
+                    color: $supplemantary-color !important;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 5px;
+                    padding: .7rem 1rem;
+
+                    &:hover {
+                        color: #0b4b57 !important;
+                    }
+                }
+
+                &.register {
+                    color: $background-color !important;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 5px;
+                    background-color: $supplemantary-color;
+                    padding: .7rem 1rem;
+
+                    &:hover {
+                        border: 1px solid #0b4b57 !important;
+                        background-color: #0b4b57 !important;
+                    }
+                }
             }
         }
     }

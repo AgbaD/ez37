@@ -17,7 +17,7 @@
 
 .barner-menu {
     position: absolute;
-    left: 80vw;
+    left: 75vw;
     top: 1.5rem;
 
     &-nav {
@@ -25,7 +25,7 @@
         list-style-type: none;
 
         &__item {
-            padding-right: 1rem;
+            padding-right: 1.6rem;
             color: $primary-color;
         }
     }
@@ -42,7 +42,7 @@
     @include transition-ease;
 
     &.open {
-        left: 10rem;
+        left: 47vw;
     }
   
     &__burger {
@@ -89,7 +89,7 @@
     }
 }
 
-.nav {
+.my-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +109,7 @@
         justify-content: flex-start;
         height: 100vh;
         overflow: hidden;
-        background: #d1c6c6;
+        background: #e4dfdf;
         list-style-type: none;
         padding-right: 1rem;
         transform: translateX(-100vw);
@@ -125,6 +125,10 @@
   
             &.open {
                 transform: translateY(0); 
+            }
+
+            &.login {
+                margin-top: 1rem;
             }
         }
   
