@@ -1,6 +1,20 @@
 @include media-md {
+    header {
+        max-height: 13vh !important;
+    }
     .menu-btn {
         visibility: hidden;
+    }
+
+    .start {
+        padding: 2rem;
+        border-radius: 5px;
+        position: absolute;
+        width: 30vw !important;
+        top: 30vh;
+        background-color: $background-color;
+        left: 5vw;
+        box-shadow: 2px 1px 7px $background-color;
     }
     
     .barner {
@@ -15,7 +29,6 @@
         width: 100vw;
         left: 0;
         visibility: visible;
-        padding-bottom: 1rem;
         box-shadow: unset;
 
         .menu-nav {
@@ -74,6 +87,9 @@
                 }
             }
         }
+    }
+    .jumbotron {
+        height: 70vh !important;
     }
 }
 

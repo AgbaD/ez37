@@ -4,23 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap Css-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-    crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-    <!-- Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-    crossorigin="anonymous"></script>
-    <!-- Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-    crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="./css/main.css">
 
     <title>EZ37 Online Classes</title>
@@ -67,10 +50,6 @@
                     <a href="#" class="menu-nav__link">
                     Categories
                     </a>
-                    <!--<ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Game Development</a></li>
-                    </ul>-->
                 </li>
                 <li class="menu-nav__item">
                     <a href="teach.html" class="menu-nav__link">
@@ -84,18 +63,23 @@
     <main>
         <div class="jumbotron text-center">
         </div>
-        <div class="start col-md-5">
+        <div class="start">
             <h2>Start Now.</h2>
-            <h5>Achieve your goals by learning with us today.</h5>
-            <form class="form-inline">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="search" value="search" placeholder="Start Learning">
-                </div>
-                <div class="search"><i class="fas fa-search"></i></div>
+            <p>Achieve your goals by learning with us today.</p>
+            <form class="start_form">
+                <input type="text" name="search" class="start__input" placeholder="Start Learning">
+                <i class="fas fa-search"></i>
             </form>
         </div>
+
+        <section class="courses">
+            <h1>View from our large collection of courses</h1>
+        </section>
     </main>
     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+    </style>
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>
 </body>

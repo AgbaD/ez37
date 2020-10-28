@@ -116,7 +116,6 @@
   margin-left: -1rem;
   left: 0;
   width: 60vw;
-  opacity: 1;
   -webkit-box-shadow: 2px 1px 7px #73726c;
           box-shadow: 2px 1px 7px #73726c;
   visibility: hidden;
@@ -218,9 +217,23 @@
           transition-delay: 0.55s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 801px) {
+  header {
+    max-height: 13vh !important;
+  }
   .menu-btn {
     visibility: hidden;
+  }
+  .start {
+    padding: 2rem;
+    border-radius: 5px;
+    position: absolute;
+    width: 30vw !important;
+    top: 30vh;
+    background-color: #ffffff;
+    left: 5vw;
+    -webkit-box-shadow: 2px 1px 7px #ffffff;
+            box-shadow: 2px 1px 7px #ffffff;
   }
   .barner {
     left: 1rem;
@@ -232,7 +245,6 @@
     width: 100vw;
     left: 0;
     visibility: visible;
-    padding-bottom: 1rem;
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
@@ -284,6 +296,9 @@
     border: 1px solid #0b4b57 !important;
     background-color: #0b4b57 !important;
   }
+  .jumbotron {
+    height: 70vh !important;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -294,16 +309,51 @@
 
 .jumbotron {
   background: url(../img/img1.jpg);
-  height: 70vh;
+  height: 40vh;
   background-size: cover;
   background-position: center;
+}
+
+.start {
+  width: 100vw;
+  padding: 2rem;
+}
+
+.start > h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 38.4px;
+  margin-bottom: 8px;
+}
+
+.start > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-bottom: 8px;
+}
+
+.start_form > input {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 80% !important;
+}
+
+.start_form > input:focus {
+  border: 0.1px solid #0f7c90;
+}
+
+.start_form > i {
+  cursor: pointer;
 }
 
 body {
   background: #ffffff;
   color: #222222;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Regular 400 sans-serif;
   line-height: 1;
 }
 
@@ -316,10 +366,10 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   -webkit-box-shadow: 2px 1px 7px #73726c;
           box-shadow: 2px 1px 7px #73726c;
-  max-height: 13vh;
+  max-height: 7vh;
 }
 
 main {
