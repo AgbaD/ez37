@@ -26,7 +26,7 @@
                     clear: right;
 
                     &.press {
-                        display: grid;
+                        display: grid !important;
                     }
 
                     & > li {

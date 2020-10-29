@@ -432,8 +432,8 @@
 }
 
 .courses-list > li > div .submenulist.press {
-  display: -ms-grid;
-  display: grid;
+  display: -ms-grid !important;
+  display: grid !important;
 }
 
 .courses-list > li > div .submenulist > li {

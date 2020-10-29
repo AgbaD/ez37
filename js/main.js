@@ -25,7 +25,7 @@ function addOpen() {
         menuNav.classList.remove('open');
         navItems.forEach(item => item.classList.remove('open'));
 
-        showNav = false
+        showNav = false;
     }
 }
 
