@@ -1,6 +1,6 @@
 .barner {
     position: absolute;
-    left: 40vw;
+    left: 36vw;
     top: 1rem;
     height: 2rem;
     width: 3rem;
@@ -22,7 +22,7 @@
 
 .barner-menu {
     position: absolute;
-    left: 75vw;
+    left: 70vw;
     top: 1.5rem;
 
     &-nav {
@@ -32,6 +32,10 @@
         &__item {
             padding-right: 1.6rem;
             color: $primary-color;
+
+            &.form {
+                display: none;
+            }
         }
     }
 }

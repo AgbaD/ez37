@@ -25,6 +25,11 @@ $background-color: #ffffff;
         @content;
       }
 }
+@mixin media-mds {
+  @media screen and (min-width: 799px) {
+    @content;
+  }
+}
 @mixin media-md {
     @media screen and (min-width: 801px) {
       @content;
