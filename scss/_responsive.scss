@@ -178,5 +178,18 @@
             }
         }
     }
+    .focused .focused-div {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .jumbotron3 {
+        height: 30vh !important;
+    }
+    .instructor {
+        margin-top: 5rem !important;
+
+        &__words {
+            margin-left: 35vw !important;
+        }
+    }
 }
 

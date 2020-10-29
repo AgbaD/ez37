@@ -367,6 +367,19 @@
   .catgs-categories__item > p {
     padding-bottom: 2rem;
   }
+  .focused .focused-div {
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .jumbotron3 {
+    height: 30vh !important;
+  }
+  .instructor {
+    margin-top: 5rem !important;
+  }
+  .instructor__words {
+    margin-left: 35vw !important;
+  }
 }
 
 .jumbotron {
@@ -556,13 +569,91 @@
   display: none;
 }
 
+.focused {
+  padding-top: 1rem;
+  background: #f0ecec;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.focused > a {
+  color: #ffffff !important;
+  border: 1px solid #0f7c90;
+  border-radius: 5px;
+  background-color: #0f7c90;
+  padding: .7rem 1rem;
+}
+
+.focused > a:hover {
+  border: 1px solid #0b4b57 !important;
+  background-color: #0b4b57 !important;
+}
+
+.focused > h2 {
+  padding-top: 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #222222;
+  line-height: 38.4px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.focused-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: minmax(200px, auto);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.focused-div__list {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.focused-div__header {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 19.2px;
+  margin-bottom: 24px;
+}
+
+.focused-div__item {
+  margin-bottom: 1rem;
+}
+
+.focused-div__item > a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: #0f7c90 !important;
+}
+
+.focused-div__item > a:hover {
+  color: #0b4b57;
+}
+
+.instructor {
+  margin-top: 2rem;
+}
+
+.instructor-div > img {
+  display: none;
+}
+
 .instructor__words {
   position: absolute;
   text-align: center;
   color: #ffffff;
   margin-top: -40vh;
-  margin-left: 1vh;
-  padding-top: 1rem;
+  margin-left: 0;
+  padding-top: 2rem;
 }
 
 .instructor__words > h2 {
@@ -575,14 +666,18 @@
 }
 
 .instructor__words > a {
-  border: 1px solid #73726c;
   padding: 1rem;
-  color: #222222;
-  border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.2px;
   line-height: 19.2px;
+  color: #0f7c90 !important;
+  border: 1px solid #0f7c90;
+  border-radius: 5px;
+}
+
+.instructor__words > a:hover {
+  color: #0b4b57 !important;
 }
 
 body {
