@@ -336,6 +336,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .add__words {
     margin-top: -25vh !important;
@@ -399,12 +403,13 @@
 
 .courses-list {
   background: #f0ecec;
-  padding: 10px 10px 15px;
   margin-top: 1rem;
 }
 
 .courses-list > li {
   list-style-type: none;
+  border-top: 1px solid #73726c;
+  padding: 1rem 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -413,16 +418,22 @@
 }
 
 .courses-list > li > div {
-  position: absolute;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .courses-list > li > div .submenulist {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   grid-auto-rows: minmax(200px, auto);
+  clear: right;
+}
+
+.courses-list > li > div .submenulist.press {
+  display: -ms-grid;
+  display: grid;
 }
 
 .courses-list > li > div .submenulist > li {
@@ -434,14 +445,15 @@
   height: 150px;
 }
 
-.courses-list > li a {
-  text-decoration: none;
+.courses-list > li p {
   padding: 10px 10px;
   color: #222222;
+  cursor: pointer;
 }
 
-.courses-list > li a:hover {
+.courses-list > li p:hover, .courses-list > li p:focus {
   border-bottom: 2px solid #0f7c90;
+  width: 50%;
 }
 
 .add__words {

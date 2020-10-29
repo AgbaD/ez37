@@ -4,23 +4,30 @@
 
     &-list {
         background: #f0ecec;
-        padding: 10px 10px 15px;
         margin-top: 1rem;
 
         & > li {
             list-style-type: none;
+            border-top : 1px solid $primary-color;
+            padding: 1rem 0;
             flex: 1;
             margin-bottom: 1rem;
             width: 20% !important;
 
             & > div{
-                position: absolute;
+                width: 100%;
+                margin-top: 1rem;
 
                 & .submenulist {
-                    display: grid;
+                    display: none;
                     grid-template-columns: repeat(1, 1fr);
                     grid-gap: 2rem;
                     grid-auto-rows: minmax(200px, auto);
+                    clear: right;
+
+                    &.press {
+                        display: grid;
+                    }
 
                     & > li {
                         list-style: none;
@@ -33,13 +40,14 @@
                 }
             }
 
-            & a {
-                text-decoration: none;
+            & p {
                 padding: 10px 10px;
                 color: $secondary-color;
+                cursor: pointer;
 
-                &:hover {
+                &:hover, &:focus {
                     border-bottom: 2px solid $supplemantary-color;
+                    width: 50%;
                 }
             }
         }
