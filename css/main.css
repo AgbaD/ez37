@@ -680,6 +680,45 @@
   color: #0b4b57 !important;
 }
 
+.transform {
+  background-color: #f0ecec;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.transform > h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30.8px;
+  margin-bottom: 2rem;
+}
+
+.transform-div > h1 {
+  font-size: 32px;
+  padding: 2rem 0;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.transform-div > h1 > span {
+  border: 1px solid #73726c;
+  padding: 1rem 1rem;
+  border-radius: 50%;
+}
+
+.transform-div > h2 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 37.4px;
+  margin-bottom: 1rem;
+}
+
+.transform-div > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
 body {
   background: #ffffff;
   color: #222222;
