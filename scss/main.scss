@@ -3,6 +3,7 @@
 @import "./responsive";
 @import "./jumbotron";
 @import "./section";
+@import "./footer";
 
 body {
     background: $background-color;
@@ -46,12 +47,3 @@ main {
     }
 }
 
-footer {
-    font-size: 1rem;
-    position: fixed;
-    bottom: 0.4rem;
-    right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    color: $primary-color;
-}

@@ -380,6 +380,10 @@
   .instructor__words {
     margin-left: 35vw !important;
   }
+  .footer {
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
 
 .jumbotron {
@@ -681,7 +685,8 @@
 }
 
 .transform {
-  background-color: #f0ecec;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/img3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/img3.jpg");
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -691,6 +696,7 @@
   font-weight: 700;
   line-height: 30.8px;
   margin-bottom: 2rem;
+  color: #ffffff;
 }
 
 .transform-div > h1 {
@@ -698,12 +704,13 @@
   padding: 2rem 0;
   font-weight: 700;
   line-height: 48px;
+  color: #ffffff;
 }
 
 .transform-div > h1 > span {
   border: 1px solid #73726c;
   padding: 1rem 1rem;
-  border-radius: 50%;
+  border-radius: 50% 50%;
 }
 
 .transform-div > h2 {
@@ -711,12 +718,44 @@
   font-weight: 700;
   line-height: 37.4px;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .transform-div > p {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.footer-item {
+  list-style: none;
+  margin-bottom: 2.3rem;
+}
+
+.footer-link {
+  margin-bottom: 1.3rem;
+}
+
+.footer-link > a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #0f7c90;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 body {
@@ -761,15 +800,5 @@ main .social-icons a {
 
 main .social-icons a:hover {
   color: #222222;
-}
-
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: #73726c;
 }
 /*# sourceMappingURL=main.css.map */

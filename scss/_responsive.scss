@@ -191,5 +191,8 @@
             margin-left: 35vw !important;
         }
     }
+    .footer {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
 }
 
