@@ -2,7 +2,7 @@
 # Author: @AgbaD | @Agba_dr3
 
 import os
-from app import db, create_app
+from .app import db, create_app
 from flask_migrate import Migrate
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
