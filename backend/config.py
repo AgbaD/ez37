@@ -5,6 +5,7 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'DFD04/4WD.3/43SD?S;D/SDT53432/DSDSD/32324/S434/34'
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.googlemail.com')
