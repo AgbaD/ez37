@@ -9,7 +9,7 @@ const sqllist = document.querySelector(".sql-list");
 const htmllist = document.querySelector(".html-list");
 const csslist = document.querySelector(".css-list");
 
-let showCoursePy = false;
+let showCoursePy = true;
 let showCourseJs = false;
 let showCourseSql = false;
 let showCourseHtml = false;

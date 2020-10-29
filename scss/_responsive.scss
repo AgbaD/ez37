@@ -1,8 +1,12 @@
 @include media-sm {
-    .courses-list > li > div{
+    .courses-list > li {
+        width: 20% !important;
+        
+        & > div{
     
-        & .submenulist {
-            grid-template-columns: repeat(3, 1fr) !important;
+            & .submenulist {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
         }
     }
     .jumbotron {
@@ -136,8 +140,8 @@
 }
 
 @include media-mdd {
-    .jumbotron2 {
-        height: 30vh !important;
+    .jumbotron2, .jumbotron3 {
+        height: 40vh !important;
     }
     .courses {
     
@@ -149,8 +153,29 @@
     .add {
 
         &__words {
-            margin-top: -25vh !important;
+            margin-top: -30vh !important;
             padding-top: 1rem;
+        }
+    }
+    .catgs-categories {
+        margin-left: 5vw !important;
+    
+        &__item {
+            border: 1px solid $primary-color !important;
+            border-radius: 1px !important;
+            padding: 0 !important;
+            flex-basis: 25% !important;
+            color: $secondary-color !important;
+            
+            & > img {    
+                display: unset !important;
+                width: 25vw;
+                padding-bottom: 1rem;
+            }
+
+            & > p {
+                padding-bottom: 2rem;
+            }
         }
     }
 }

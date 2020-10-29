@@ -1,6 +1,10 @@
 .courses {
     background-color: #f0ecec;
-    padding: 3rem;
+    padding: 1rem;
+
+    &-div {
+        text-align: left;
+    }
 
     &-list {
         background: #f0ecec;
@@ -9,10 +13,11 @@
         & > li {
             list-style-type: none;
             border-top : 1px solid $primary-color;
-            padding: 1rem 0;
+            width: 50% ;
+            padding-top: 1rem;
             flex: 1;
             margin-bottom: 1rem;
-            width: 20% !important;
+            @include transition-ease;
 
             & > div{
                 width: 100%;
@@ -23,7 +28,7 @@
                     grid-template-columns: repeat(1, 1fr);
                     grid-gap: 2rem;
                     grid-auto-rows: minmax(200px, auto);
-                    clear: right;
+                    @include transition-ease;
 
                     &.press {
                         display: grid !important;
@@ -41,14 +46,13 @@
             }
 
             & p {
-                padding: 10px 10px;
+                padding-top: 10px;
                 color: $secondary-color;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: -0.2px;
+                line-height: 19.2px;
                 cursor: pointer;
-
-                &:hover, &:focus {
-                    border-bottom: 2px solid $supplemantary-color;
-                    width: 50%;
-                }
             }
         }
     }
@@ -76,6 +80,73 @@
             padding: 1rem;
             border-radius: 5px;
             color: $background-color !important;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 19.2px;
+        }
+    }
+}
+
+.catgs {
+    background: #f0ecec;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+    & > h2 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        line-height: 28.8px;
+        margin-bottom: 16px;
+    }
+
+    &-categories {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        &__item {
+            flex-basis: 33%;
+            border: 1px solid $tertiary-color;
+            text-align: center;
+            margin: 1rem;
+            border-radius: 15px;
+            padding: 1rem .5rem;
+            color: $tertiary-color;
+            width: 40vw;
+
+            & > img {
+                display: none;
+            }
+        }
+    }
+}
+.instructor {
+
+    &__words {
+        position: absolute;
+        text-align: center;
+        color: $background-color;
+        margin-top: -40vh;
+        margin-left: 1vh;
+        padding-top: 1rem;
+
+        & > h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            color: $secondary-color;
+            line-height: 38.4px;
+            margin-bottom: 2rem;
+        }
+
+        & > a {
+            border: 1px solid $primary-color;
+            padding: 1rem;
+            color: $secondary-color;
+            border-radius: 5px;
             font-size: 16px;
             font-weight: 700;
             letter-spacing: -0.2px;
