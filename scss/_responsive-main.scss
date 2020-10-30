@@ -35,6 +35,17 @@
             flex-direction: column;
         }
     }
+    .dash-main {
+
+        &__courses {
+            grid-template-columns: 1fr 1fr !important;
+
+            &-list {
+                margin-right: 1.7rem;
+                margin-left: 1rem;
+            }
+        }
+    }
     .add {
 
         &__words {
@@ -87,12 +98,14 @@
         margin-left: 23vw !important;
         padding-top: 13rem !important;
     }
-    
 }
 
 @include media-md {
     header {
         max-height: 13vh !important;
+    }
+    & h4.crumbs {
+        display: none;
     }
     .menu-btn {
         visibility: hidden;
@@ -256,7 +269,7 @@
     .dash-main {
         position: absolute;
         top: 20vh;
-        left: 16vw;
+        left: 18vw;
     }
 }
 
