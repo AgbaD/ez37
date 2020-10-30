@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/dash.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <title>EZ37 | Dashboard </title>
@@ -62,13 +61,23 @@
                 <!-- Dash board nav joins with major nav
                 for smaller screen-->
                 <li class="menu-nav__item dash-2">
-                    <a href="#" class="active menu-nav__link">
+                    <a href="#" class=" menu-nav__link">
                     DashBoard
                     </a>
                 </li>
                 <li class="menu-nav__item dash-2">
                     <a href="#" class="menu-nav__link">
                     My Courses
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Assignment
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Community
                     </a>
                 </li>
                 <li class="menu-nav__item dash-2">
@@ -108,8 +117,8 @@
                     </a>
                 </li>
                 <li class="menu-nav__item dash-0">
-                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link pro2">
-                        <h2>DA</h2>
+                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link da">
+                        <h4>DA</h4>
                     </a>
                 </li>
             </ul>
@@ -121,13 +130,35 @@
             <div class="dash-board">
                 <ul class="dash-board__list">
                     <!-- Dashboard nav-->
-                    <li><a href="#" class="dash1 active">DashBoard</a></li>
-                    <li><a href="#" class="dash1">My Courses</a></li>
+                    <li class="active"><a href="#" class="dash1">DashBoard</a></li>
+                    <li><a href="#" class="dash1">Courses</a></li>
+                    <li><a href="#" class="dash1">Assignment</a></li>
+                    <li><a href="#" class="dash1">Community</a></li>
                     <li><a href="#" class="dash1">Categories</a></li>
                     <li><a href="#" class="dash1">Calender</a></li>
                     <li><a href="#" class="dash1">Settings</a></li>
                     <li><a href="#" class="dash1">Logout</a></li>
                     <!-- end dashboard nav-->
+                </ul>
+            </div>
+        </section>
+        <section class="dash-main">
+            <div class="dash-main__courses">
+                <ul>
+                    <li><img src="./img/img7.jpg"></li>
+                    <li><p>Web Development</p></li>
+                </ul>
+                <ul>
+                    <li><img src="./img/img7.jpg"></li>
+                    <li><p>Introduction to JavaScript</p></li>
+                </ul>
+                <ul>
+                    <li><img src="./img/img7.jpg"></li>
+                    <li><p>Web Secirity</p></li>
+                </ul>
+                <ul>
+                    <li><img src="./img/img7.jpg"></li>
+                    <li><p>Caching with Reddis</p></li>
                 </ul>
             </div>
         </section>

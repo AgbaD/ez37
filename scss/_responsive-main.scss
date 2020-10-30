@@ -166,6 +166,18 @@
                 margin-top: 1rem;
                 text-decoration: none !important;
 
+                &.pro1 {
+                    display: none !important;
+                }
+
+                &.da {
+                    color: $background-color;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 50px 50px;
+                    padding: 17px 10px;
+                    background: $supplemantary-color;
+                }
+
                 &.login {
                     color: $supplemantary-color !important;
                     border: 1px solid $supplemantary-color;
@@ -209,10 +221,42 @@
         }
     }
     .dash {
+        width: 15vw;
+        height: 80vh;
+        border-right: 2px solid #e4dfdf;
+        box-shadow: 2px 1px 7px $primary-color;
+        margin-bottom: -2rem !important;
 
         &-board__list{
-            padding: 2rem;
+            display: unset !important;
+            padding: 2rem 1rem;
+            list-style-type: none;
+            width: 100%;
+            height: auto;
+
+            & > li {
+                padding: 1rem;
+                
+                &.active {
+                    border-left: 5px solid $tertiary-color;
+                }
+
+                & > a {
+                    color: $secondary-color;
+                    padding: .5rem;
+                    width: 100%;
+
+                    &:hover {
+                        color: $supplemantary-color;
+                    }
+                }
+            }
         }
+    }
+    .dash-main {
+        position: absolute;
+        top: 20vh;
+        left: 16vw;
     }
 }
 
