@@ -151,6 +151,14 @@
             &__item {
                 display: inline;
                 margin-right: 3.5rem;
+
+                &.dash-0 {
+                    display: unset !important;
+                }
+
+                &.dash-2 {
+                    display: none;
+                }
             }
 
             &__link {
@@ -198,6 +206,12 @@
     
         & .submenulist {
             grid-template-columns: repeat(5, 1fr) !important;
+        }
+    }
+    .dash {
+
+        &-board__list{
+            padding: 2rem;
         }
     }
 }

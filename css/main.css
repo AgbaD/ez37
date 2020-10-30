@@ -221,6 +221,27 @@
           transition-delay: 0.55s;
 }
 
+.my-nav .menu-nav__link.pro1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-nav .menu-nav__link.pro2 {
+  display: none;
+}
+
+.my-nav .menu-nav__link.pro1, .my-nav .menu-nav__link.pro2 {
+  color: #ffffff;
+  border: 1px solid #0f7c90;
+  border-radius: 50px 50px;
+  padding: 17px 10px;
+  background: #0f7c90;
+}
+
+.my-nav .menu-nav__item.dash-0 {
+  display: none;
+}
+
 @media screen and (min-width: 576px) {
   .courses-list > li {
     width: 20% !important;
@@ -358,6 +379,12 @@
     display: inline;
     margin-right: 3.5rem;
   }
+  .my-nav .menu-nav__item.dash-0 {
+    display: unset !important;
+  }
+  .my-nav .menu-nav__item.dash-2 {
+    display: none;
+  }
   .my-nav .menu-nav__link {
     font-size: 1rem;
     margin-top: 1rem;
@@ -393,6 +420,9 @@
   .courses-list > li > div .submenulist {
     -ms-grid-columns: (1fr)[5] !important;
         grid-template-columns: repeat(5, 1fr) !important;
+  }
+  .dash-board__list {
+    padding: 2rem;
   }
 }
 

@@ -35,7 +35,7 @@
                 <li class="barner-menu-nav__item form">
                     <form action="">
                         <input name="search"
-                         placeholder="Start Searching" type="text"
+                         placeholder="Start Learning" type="text"
                          class="barner-menu-nav__dash-search">
                     </form>
                 </li>
@@ -44,34 +44,125 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </li>
+                <li class="barner-menu-nav__item">
+                    <a href="#" class="barner-menu-nav__search">
+                        <i class="far fa-bell"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         
         <nav class="my-nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item cat">
-                    <a href="{{ url_for('main.courses') }}" class="menu-nav__link">
-                    My courses
+                <li class="menu-nav__item">
+                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link pro1">
+                        <h2>DA</h2>
                     </a>
                 </li>
-                <li class="menu-nav__item cat">
+                <!-- Dash board nav joins with major nav
+                for smaller screen-->
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="active menu-nav__link">
+                    DashBoard
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    My Courses
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
                     <a href="#" class="menu-nav__link">
                     Categories
                     </a>
                 </li>
-                <li class="menu-nav__item">
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Calender
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Settings
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Logout
+                    </a>
+                </li>
+                <!-- End dasboard nav-->
+                <li class="menu-nav__item dash-0">
+                    <a href="{{ url_for('main.courses') }}" class="menu-nav__link">
+                    My courses
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-0">
+                    <a href="#" class="menu-nav__link">
+                    Categories
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-0">
                     <a href="{{ url_for('main.teach') }}" class="menu-nav__link">
                     Become a Teacher
                     </a>
                 </li>
-                <li class="menu-nav__item">
-                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link login">
-                    
+                <li class="menu-nav__item dash-0">
+                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link pro2">
+                        <h2>DA</h2>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="dash">
+            <div class="dash-board">
+                <ul class="dash-board__list">
+                    <!-- Dashboard nav-->
+                    <li><a href="#" class="dash1 active">DashBoard</a></li>
+                    <li><a href="#" class="dash1">My Courses</a></li>
+                    <li><a href="#" class="dash1">Categories</a></li>
+                    <li><a href="#" class="dash1">Calender</a></li>
+                    <li><a href="#" class="dash1">Settings</a></li>
+                    <li><a href="#" class="dash1">Logout</a></li>
+                    <!-- end dashboard nav-->
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Become A Teacher</a></li>
+                    <li class="footer-link"><a href="#">Get The App</a></li>
+                    <li class="footer-link"><a href="#">About Us</a></li>
+                    <li class="footer-link"><a href="#">Get in Touch</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Careers</a></li>
+                    <li class="footer-link"><a href="#">Blog</a></li>
+                    <li class="footer-link"><a href="#">Help & Support</a></li>
+                    <li class="footer-link"><a href="#">Affiliate</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Terms & Conditions</a></li>
+                    <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-link"><a href="#">Featured Courses</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Roadmap</a></li>
+                    <li class="footer-link"><a href="#">Beta Content</a></li>
+                    <li class="footer-link"><a href="#">Cheat Sheets</a></li>
+                </ul>
+            </div>
+            <hr />
+            <div class="copy">
+                <p> Made with <i class="far fa-heart"></i> by AG || &copy; 2020 <a href="http://damilareagba.surge.sh">AG Universe</a></p>
+            </div>
+        </footer>
+    </main>
 
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>

@@ -20,6 +20,7 @@
     }
 }
 
+
 .barner-menu {
     position: absolute;
     left: 70vw;
@@ -173,4 +174,24 @@
     }
 }
   
-  
+.my-nav .menu-nav {
+
+    &__link.pro1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__link.pro2 {
+        display: none;
+    }
+    &__link.pro1, &__link.pro2 {
+        color: $background-color;
+        border: 1px solid $supplemantary-color;
+        border-radius: 50px 50px;
+        padding: 17px 10px;
+        background: $supplemantary-color;
+    }
+
+    &__item.dash-0{
+        display: none;
+    }
+}
