@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>EZ37 | Dashboard </title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <div class="barner">
+            <a href="{{ url_for('main.index') }}" class="barner__link">
+                EZ37
+            </a>
+        </div>
+        <div class="barner-menu">
+            <ul class="barner-menu-nav">
+                <li class="barner-menu-nav__item">
+                    <a href="cart.html" class="barner-menu-nav__link">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li class="barner-menu-nav__item">
+                    <a href="#" class="barner-menu-nav__link">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </li>
+                <li class="barner-menu-nav__item form">
+                    <form action="">
+                        <input name="search"
+                         placeholder="Start Learning" type="text"
+                         class="barner-menu-nav__dash-search">
+                    </form>
+                </li>
+                <li class="barner-menu-nav__item">
+                    <a href="#" class="barner-menu-nav__search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <nav class="my-nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link pro1">
+                        <h2>DA</h2>
+                    </a>
+                </li>
+                <!-- Dash board nav joins with major nav
+                for smaller screen-->
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class=" menu-nav__link">
+                    DashBoard
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    My Courses
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Assignment
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Community
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Categories
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Calender
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Settings
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-2">
+                    <a href="#" class="menu-nav__link">
+                    Logout
+                    </a>
+                </li>
+                <!-- End dasboard nav-->
+                <li class="menu-nav__item dash-0">
+                    <a href="{{ url_for('main.courses') }}" class="menu-nav__link">
+                    My courses
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-0">
+                    <a href="#" class="menu-nav__link">
+                    Categories
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-0">
+                    <a href="{{ url_for('main.teach') }}" class="menu-nav__link">
+                    Become a Teacher
+                    </a>
+                </li>
+                <li class="menu-nav__item dash-0">
+                    <a href="{{ url_for('main.profile') }}" class="menu-nav__link da">
+                        <h4>DA</h4>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dash">
+            <div class="dash-board">
+                <ul class="dash-board__list">
+                    <!-- Dashboard nav-->
+                    <li class="active"><a href="#" class="dash1"><i class="fas fa-home"></i> DashBoard</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-book"></i> Courses</a></li>
+                    <li><a href="#" class="dash1"><i class="fab fa-telegram-plane"></i> Assignment</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-user"></i> Community</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-bars"></i> Categories</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-calendar-week"></i> Calender</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#" class="dash1"><i class="fas fa-power-off"></i> Logout</a></li>
+                    <!-- end dashboard nav-->
+                </ul>
+            </div>
+        </section>
+        <section class="dash-main">
+            <h4 class="crumbs">EZ37 / <span class="crumbs-db"><i class="fas fa-home"></i> DashBoard</span></h4>
+            <h1>Welcome, Damilare</h1>
+            <p>Continue your classes now</p>
+            <div class="dash-main__courses">
+                <ul class="dash-main__courses-list">
+                    <li><img src="./img/img7.jpg"></li>
+                    <li>
+                        <ul>
+                            <li><p>13. Dealing with Layouts</p></li>
+                            <li><h4>Web Development</h4></li>
+                            <li><span class="wd_prgb"><i class="fas fa-play-circle"></i></span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dash-main__courses-list">
+                    <li><img src="./img/img7.jpg"></li>
+                    <li>
+                        <ul>
+                            <li><p>7. Sockets</p></li>
+                            <li><h4>Networking</h4></li>
+                            <li><span class="wd_prgb"><i class="fas fa-play-circle"></i></span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dash-main__courses-list">
+                    <li><img src="./img/img7.jpg"></li>
+                    <li>
+                        <ul>
+                            <li><p>1. Introduction to SSH</p></li>
+                            <li><h4>Web Security</h4></li>
+                            <li><span class="wd_prgb"><i class="fas fa-play-circle"></i></span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dash-main__courses-list">
+                    <li><img src="./img/img7.jpg"></li>
+                    <li>
+                        <ul>
+                            <li><p>2. Caching with Reddis</p></li>
+                            <li><h4>Server Side Caching</h4></li>
+                            <li><span class="wd_prgb"><i class="fas fa-play-circle"></i></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Become A Teacher</a></li>
+                    <li class="footer-link"><a href="#">Get The App</a></li>
+                    <li class="footer-link"><a href="#">About Us</a></li>
+                    <li class="footer-link"><a href="#">Get in Touch</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Careers</a></li>
+                    <li class="footer-link"><a href="#">Blog</a></li>
+                    <li class="footer-link"><a href="#">Help & Support</a></li>
+                    <li class="footer-link"><a href="#">Affiliate</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Terms & Conditions</a></li>
+                    <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-link"><a href="#">Featured Courses</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="footer-link"><a href="#">Roadmap</a></li>
+                    <li class="footer-link"><a href="#">Beta Content</a></li>
+                    <li class="footer-link"><a href="#">Cheat Sheets</a></li>
+                </ul>
+            </div>
+            <hr />
+            <div class="copy">
+                <p> Made with <i class="far fa-heart"></i> by AG || &copy; 2020 <a href="http://damilareagba.surge.sh">AG Universe</a></p>
+                <a href="./index.html">Home</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

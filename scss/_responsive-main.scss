@@ -1,0 +1,288 @@
+@include media-sm {
+    .courses-list > li {
+        width: 20% !important;
+        
+        & > div{
+    
+            & .submenulist {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+        }
+    }
+    .jumbotron {
+        background-position: center top;
+    }
+    .barner-menu {
+        left: 85vw;
+    
+        &-nav {
+    
+            &__item {
+                padding-right: 1.2rem;
+            }
+        }
+    }
+}
+
+@include media-mdd {
+    .jumbotron2, .jumbotron3 {
+        height: 40vh !important;
+    }
+    .courses {
+    
+        &-list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .dash-main {
+
+        &__courses {
+            grid-template-columns: 1fr 1fr !important;
+
+            &-list {
+                margin-right: 1.7rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+    .add {
+
+        &__words {
+            margin-top: -30vh !important;
+            padding-top: 1rem;
+        }
+    }
+    .catgs-categories {
+        margin-left: 5vw !important;
+    
+        &__item {
+            border: 1px solid $primary-color !important;
+            border-radius: 1px !important;
+            padding: 0 !important;
+            flex-basis: 25% !important;
+            color: $secondary-color !important;
+            
+            & > img {    
+                display: unset !important;
+                width: 25vw;
+                padding-bottom: 1rem;
+            }
+
+            & > p {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    .focused .focused-div {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .jumbotron3 {
+        height: 30vh !important;
+    }
+    .instructor {
+        margin-top: 5rem !important;
+
+        &__words {
+            margin-left: 23vw !important;
+            padding-top: 9rem !important;
+        }
+    }
+    .footer {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@include media-mds {
+    .instructor__words {
+        margin-left: 23vw !important;
+        padding-top: 13rem !important;
+    }
+}
+
+@include media-md {
+    header {
+        max-height: 13vh !important;
+    }
+    & h4.crumbs {
+        display: none;
+    }
+    .menu-btn {
+        visibility: hidden;
+    }
+    
+    .start {
+        padding: 2rem;
+        border-radius: 5px;
+        position: absolute;
+        width: 30vw !important;
+        top: 30vh;
+        background-color: $background-color;
+        left: 5vw;
+        box-shadow: 2px 1px 7px $background-color;
+
+        .start {
+            width: 100vw;
+            padding: 2rem;
+        
+            &_form {
+        
+                & > input {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    .barner {
+        left: 3rem;
+    }
+
+    .barner-menu {
+        left: 12rem !important;
+
+        &-nav__item.form {
+            display: unset !important;
+            margin-top: -7px !important;
+        }
+    }
+
+    .my-nav {
+        width: 100vw;
+        left: 0;
+        visibility: visible;
+        box-shadow: unset;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                margin-right: 3.5rem;
+
+                &.dash-0 {
+                    display: unset !important;
+                }
+
+                &.dash-2 {
+                    display: none;
+                }
+            }
+
+            &__link {
+                font-size: 1rem;
+                margin-top: 1rem;
+                text-decoration: none !important;
+
+                &.pro1 {
+                    display: none !important;
+                }
+
+                &.da {
+                    color: $background-color;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 50px 50px;
+                    padding: 17px 10px;
+                    background: $supplemantary-color;
+                }
+
+                &.login {
+                    color: $supplemantary-color !important;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 5px;
+                    padding: .7rem 1rem;
+
+                    &:hover {
+                        color: #0b4b57 !important;
+                    }
+                }
+
+                &.register {
+                    color: $background-color !important;
+                    border: 1px solid $supplemantary-color;
+                    border-radius: 5px;
+                    background-color: $supplemantary-color;
+                    padding: .7rem 1rem;
+
+                    &:hover {
+                        border: 1px solid #0b4b57 !important;
+                        background-color: #0b4b57 !important;
+                    }
+                }
+            }
+        }
+    }
+    .jumbotron {
+        height: 70vh !important;
+    }
+    .add {
+
+        &__words {
+            margin-top: -30vh !important;
+            margin-left: 3vw !important;
+        }
+    }
+    .courses-list > li > div{
+    
+        & .submenulist {
+            grid-template-columns: repeat(5, 1fr) !important;
+        }
+    }
+    .dash {
+        width: 15vw;
+        height: 80vh;
+        border-right: 2px solid #e4dfdf;
+        box-shadow: 2px 1px 7px $primary-color;
+        margin-bottom: -2rem !important;
+
+        &-board__list{
+            display: unset !important;
+            padding: 2rem 1rem;
+            list-style-type: none;
+            width: 100%;
+            height: auto;
+
+            & > li {
+                padding: 1rem;
+                
+                &.active {
+                    border-left: 5px solid $tertiary-color;
+                }
+
+                & > a {
+                    color: $secondary-color;
+                    padding: .5rem;
+                    width: 100%;
+
+                    &:hover {
+                        color: $supplemantary-color;
+                    }
+                }
+            }
+        }
+    }
+    .dash-main {
+        position: absolute;
+        top: 20vh;
+        left: 18vw;
+    }
+}
+
+@include media-lg {
+    .add {
+
+        &__words {
+            margin-left: 17vw !important;
+        }
+    }
+    .instructor__words {
+        margin-left: 33vw !important;
+        padding-top: 3rem !important;
+    }
+    
+}
