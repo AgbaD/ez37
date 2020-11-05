@@ -1,0 +1,53 @@
+.jumbotron {
+    background: url(../img/img1.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron2 {
+    background: url(../img/img5.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron3 {
+    height: 45vh;
+}
+
+.start {
+    width: 100vw;
+    padding: 2rem;
+
+    & > h2 {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        line-height: 38.4px;
+        margin-bottom: 8px
+    }
+
+    & > p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        margin-bottom: 8px
+    }
+
+    &_form {
+
+        & > input {
+            padding: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 80% !important;
+
+            &:focus {
+                border: .1px solid $supplemantary-color;
+            }
+        }
+
+        & > i {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+.barner {
+    position: absolute;
+    left: 36vw;
+    top: 1rem;
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+    @include transition-ease;
+
+    &__link {
+        color: $tertiary-color;
+        width: 3rem;
+        font-size: 30px;
+        font-weight: 700;
+
+        &:hover {
+            color: $tertiary-color;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.barner-menu {
+    position: absolute;
+    left: 70vw;
+    top: 1.5rem;
+
+    &-nav {
+        display: flex;
+        list-style-type: none;
+
+        &__item {
+            padding-right: 1.6rem;
+            color: $primary-color;
+
+            &.form {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 1.3rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    &.open {
+        left: 47vw;
+    }
+  
+    &__burger {
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: $primary-color;
+        @include transition-ease;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: $primary-color;
+            @include transition-ease;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: $primary-color;
+            @include transition-ease;
+        }
+    
+        &.open {
+            background: transparent;
+    
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+    
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+.my-nav {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    left: 0;
+    width: 60vw;
+    box-shadow: 2px 1px 7px $primary-color;
+    visibility: hidden;
+  
+    &.open {
+        visibility: visible;
+    }
+  
+    .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: left;
+        padding-left: 1rem;
+        justify-content: flex-start;
+        height: 100vh;
+        overflow: hidden;
+        background: #e4dfdf;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateX(-100vw);
+        @include transition-ease;
+  
+        &.open {
+            transform: translateX(0);
+        }
+  
+        &__item {
+            transform: translateY(-100%);
+            @include transition-ease;
+  
+            &.open {
+                transform: translateY(0); 
+            }
+
+            &.login {
+                margin-top: 1rem;
+            }
+
+            &.register {
+                border-bottom: 1px solid $primary-color;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+  
+        &__link {
+            display: inline-block;
+            color: $secondary-color;
+            font-size: 1rem;
+            padding: .5rem 0;
+            font-weight: 300;
+            @include transition-ease;
+
+            &.login, &.register {
+                color: $supplemantary-color !important;
+            }
+  
+            &:hover {
+                text-decoration: none;
+                color: $supplemantary-color;
+            }
+        }
+    }
+}
+  
+@for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + 0.15s;
+    }
+}
+  
+.my-nav .menu-nav {
+
+    &__link.pro1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__link.pro2 {
+        display: none;
+    }
+    &__link.pro1, &__link.pro2 {
+        color: $background-color;
+        border: 1px solid $supplemantary-color;
+        border-radius: 50px 50px;
+        padding: 17px 10px;
+        background: $supplemantary-color;
+    }
+
+    &__item.dash-0{
+        display: none;
+    }
+}
